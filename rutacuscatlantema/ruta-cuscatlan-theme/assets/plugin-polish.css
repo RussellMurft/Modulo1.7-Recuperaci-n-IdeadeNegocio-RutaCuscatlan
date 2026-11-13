@@ -1,0 +1,213 @@
+/* Visual refinement layer for the plugin's existing shortcodes. The plugin remains in charge of data, filtering and forms. */
+.ruta{--az:#276b55;--nv:#123b46;--ve:#397a55;--sol:#e9b95d;--tq:#4c9386;--cl:#f3f5ed;--bd:#e1e7dc;--tx:#1d3030;--mut:#647570;color:var(--tx);font-family:inherit}
+.ruta h2{margin:38px 0 17px;color:var(--nv);font-family:Georgia,"Times New Roman",serif;font-size:clamp(27px,3vw,38px);font-weight:500;letter-spacing:-.025em;line-height:1.15}
+.ruta h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.015em}
+.ruta .hero{position:relative;overflow:hidden;padding:48px 30px 40px;border:1px solid rgba(255,255,255,.14);border-radius:26px;background:radial-gradient(circle at 82% 12%,rgba(233,185,93,.22),transparent 24%),linear-gradient(125deg,#123b46 0%,#1c5960 58%,#276b55 100%);box-shadow:0 17px 40px rgba(18,59,70,.13)}
+.ruta .hero:after{position:absolute;content:"";width:360px;height:360px;right:-145px;bottom:-245px;border:1px solid rgba(255,255,255,.19);border-radius:50%;box-shadow:0 0 0 30px rgba(255,255,255,.035),0 0 0 70px rgba(255,255,255,.025);pointer-events:none}
+.ruta .hero .logo{position:relative;z-index:1;max-width:300px;border-radius:15px;background:#fff;padding:12px 17px;box-shadow:0 9px 24px rgba(0,0,0,.08)}
+.ruta .hero h2{position:relative;z-index:1;margin:12px 0;color:#fff;font-size:clamp(32px,4.5vw,52px);font-weight:500;letter-spacing:-.035em}
+.ruta .hero p{position:relative;z-index:1;max-width:620px;color:rgba(255,255,255,.76);font-size:15px}
+.ruta .buscar{position:relative;z-index:1;max-width:700px;margin:25px auto 0;padding:7px;border:1px solid rgba(255,255,255,.25);border-radius:15px;background:rgba(255,255,255,.12);backdrop-filter:blur(10px)}
+.ruta .buscar input{min-height:48px;border:0!important;border-radius:10px!important;background:#fff!important}
+.ruta .btn{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:10px 18px;border:0;border-radius:999px;background:var(--az);box-shadow:0 5px 12px rgba(18,59,70,.08);font-family:inherit;font-size:12px;font-weight:800;letter-spacing:.02em;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
+.ruta .btn:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 9px 18px rgba(18,59,70,.14)}
+.ruta .btn.nar{background:var(--sol);color:#21342e!important}
+.ruta .btn.wa{background:#1b7959}
+.ruta input:not([type=checkbox]),.ruta select,.ruta textarea{min-height:47px;border:1px solid #dce4da;border-radius:11px;background:#fff;color:var(--tx);font-family:inherit;font-size:14px;transition:border-color .2s,box-shadow .2s}
+.ruta input:focus,.ruta select:focus,.ruta textarea:focus{border-color:#6c9c7c!important;outline:0;box-shadow:0 0 0 3px rgba(39,107,85,.12)}
+.ruta .stats{gap:13px;margin:23px 0 38px}
+.ruta .stats div{padding:20px 14px;border:1px solid var(--bd);border-radius:17px;background:#fff;box-shadow:0 7px 20px rgba(20,52,50,.04);color:var(--mut);font-size:12px;font-weight:650;letter-spacing:.04em}
+.ruta .stats b{color:var(--forest,var(--az));font-family:Georgia,"Times New Roman",serif;font-size:36px;font-weight:500;line-height:1.2}
+.ruta .cats{grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:13px;margin-bottom:35px}
+.ruta .cat{min-height:148px;justify-content:center;border:1px solid var(--bd);border-radius:17px;background:#fff;color:var(--nv);box-shadow:0 7px 20px rgba(20,52,50,.035);transition:transform .2s,border-color .2s,box-shadow .2s}
+.ruta .cat:hover,.ruta .cat:focus-visible{transform:translateY(-4px);border-color:#c2d3bf;background:#fff;box-shadow:0 13px 26px rgba(20,52,50,.08)}
+.ruta .cat span{display:grid;place-items:center;width:54px;height:54px;margin-bottom:5px;border-radius:17px;background:var(--cl);font-size:29px}
+.ruta .cat b{font-size:13px}
+.ruta .cat small{font-size:11px}
+.ruta .grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:19px;margin:18px 0 28px}
+.ruta .card{border:1px solid var(--bd);border-radius:19px;background:#fff;box-shadow:0 6px 21px rgba(20,52,50,.055);transition:transform .2s,border-color .2s,box-shadow .2s}
+.ruta .card:hover{transform:translateY(-5px);border-color:#c8d7c4;box-shadow:0 16px 32px rgba(20,52,50,.11)}
+.ruta .rb{height:185px;background:#dbe8d9}
+.ruta .rb img{transition:transform .4s ease}
+.ruta .card:hover .rb img{transform:scale(1.045)}
+.ruta .cb{gap:9px;padding:17px}
+.ruta .cb h3{font-size:23px;line-height:1.15}
+.ruta .cb h3 a{color:var(--nv)}
+.ruta .cb>p{font-size:13px;line-height:1.55}
+.ruta .cb .meta{font-size:11px;font-weight:700;letter-spacing:.035em;text-transform:uppercase}
+.ruta .tag{padding:5px 10px;border-radius:999px;background:var(--az);font-size:10px;letter-spacing:.02em}
+.ruta .tag.ok{background:#367951}
+.ruta .tag.cerca{background:#71847c}
+.ruta .tag.no{background:#a85d51}
+.ruta .filtros{gap:13px;margin-bottom:16px;padding:17px;border:1px solid var(--bd);border-radius:17px;background:#fff;box-shadow:0 7px 20px rgba(20,52,50,.035)}
+.ruta .filtros label{font-size:12px;color:var(--nv)}
+.ruta .filtros .chk{font-size:12px}
+.ruta .chips{gap:8px;margin:15px 0}
+.ruta .chip{min-height:39px;padding:8px 14px;border:1px solid var(--bd);border-radius:999px;background:#fff;color:var(--nv);font-family:inherit;font-size:11px;font-weight:750;transition:background .2s,color .2s,border-color .2s}
+.ruta .chip[aria-pressed=true]{border-color:var(--nv);background:var(--nv);color:#fff}
+.ruta .count{font-size:12px;font-weight:700}
+.ruta .msg{padding:16px 18px;border:1px solid var(--bd);border-radius:14px;background:#f4f7ef;color:var(--nv);font-size:13px}
+.ruta .msg.good{border-color:#cde2d1;background:#eff8f0;color:#235b3c}
+.ruta .msg.bad{border-color:#edd4d0;background:#fff3f1;color:#8d4038}
+.ruta .ficha{max-width:720px;margin:18px 0 24px;border:1px solid var(--bd);border-radius:14px;overflow:hidden;background:#fff}
+.ruta .ficha th,.ruta .ficha td{padding:13px 15px;border-bottom:1px solid var(--bd);font-size:13px}
+.ruta .ficha th{background:#f3f5ed;color:var(--nv)}
+.ruta .form{max-width:760px;padding:25px;border:1px solid var(--bd);border-radius:19px;background:#fff;box-shadow:0 8px 28px rgba(20,52,50,.05)}
+.ruta .form label{margin-bottom:16px;color:var(--nv);font-size:12px}
+.ruta .form textarea{min-height:105px}
+.ruta .dos{gap:16px}
+.ruta .pasos{gap:15px;margin:22px 0 30px}
+.ruta .paso{padding:22px;border:1px solid var(--bd);border-radius:17px;background:#fff}
+.ruta .paso span{display:grid;place-items:center;width:49px;height:49px;margin-bottom:13px;border-radius:15px;background:var(--cl)}
+.ruta .paso b{color:var(--nv);font-size:14px}
+.ruta .paso p{font-size:13px}
+.ruta .migas{margin:0 0 15px;font-size:11px}
+.ruta :focus-visible{outline:3px solid rgba(233,185,93,.85);outline-offset:3px}
+@media(max-width:640px){
+ .ruta .hero{padding:34px 20px 27px;border-radius:20px}
+ .ruta .hero .logo{max-width:230px}
+ .ruta .hero h2{font-size:34px}
+ .ruta .hero p{font-size:13px}
+ .ruta .buscar{display:grid;grid-template-columns:1fr;margin-top:18px}
+ .ruta .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:17px 0 29px}
+ .ruta .stats div{padding:12px 7px;font-size:9px}
+ .ruta .stats b{font-size:27px}
+ .ruta .cats{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .ruta .cat{min-height:128px;padding:12px 7px}
+ .ruta .cat span{width:46px;height:46px;font-size:25px}
+ .ruta .grid{grid-template-columns:1fr;gap:13px}
+ .ruta .rb{height:190px}
+ .ruta .filtros{padding:13px}
+ .ruta .form{padding:17px}
+ .ruta .ficha th,.ruta .ficha td{padding:10px;font-size:12px}
+}
+
+/* Detail maps and lodging photography */
+.ruta .ruta-map{margin:28px 0 34px}
+.ruta .ruta-map h3{margin:0 0 14px;color:var(--nv);font-size:clamp(23px,3vw,31px)}
+.ruta .ruta-map-frame{position:relative;overflow:hidden;width:100%;aspect-ratio:16/9;min-height:280px;border:1px solid var(--bd);border-radius:20px;background:#e8eee5;box-shadow:0 10px 28px rgba(18,59,70,.08)}
+.ruta .ruta-map-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ruta .hotel-img{height:190px;overflow:hidden;background:#e8eee5}
+.ruta .hotel-img img{display:block;width:100%;height:100%;object-fit:cover}
+.ruta .hotel-img + .cb{padding-top:16px}
+.ruta .hotel-img img{transition:transform .35s ease}
+.ruta .card:hover .hotel-img img{transform:scale(1.04)}
+@media(max-width:640px){.ruta .ruta-map-frame{aspect-ratio:4/3;min-height:240px}}
+
+
+/* Página Nosotros ampliada: presentación, valores y anexos informativos */
+.ruta .ruta-nosotros{max-width:1120px;margin:0 auto;padding:8px 0 24px}
+.ruta .rn-hero{position:relative;overflow:hidden;padding:clamp(34px,6vw,72px);border-radius:28px;background:radial-gradient(circle at 88% 10%,rgba(233,185,93,.25),transparent 25%),linear-gradient(125deg,#123b46,#276b55);color:#fff}
+.ruta .rn-hero:after{content:"";position:absolute;width:320px;height:320px;right:-130px;bottom:-220px;border:1px solid rgba(255,255,255,.2);border-radius:50%;box-shadow:0 0 0 35px rgba(255,255,255,.035),0 0 0 75px rgba(255,255,255,.025)}
+.ruta .rn-hero .ruta-eyebrow,.ruta .rn-kicker{display:block;color:#d9b96d;font-size:10px;font-weight:850;letter-spacing:.18em;text-transform:uppercase}
+.ruta .rn-hero h1{position:relative;z-index:1;max-width:760px;margin:18px 0;color:#fff;font:500 clamp(38px,6vw,66px)/1.05 Georgia,serif;letter-spacing:-.035em}
+.ruta .rn-hero>p{position:relative;z-index:1;max-width:640px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.8}
+.ruta .rn-hero-stats{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.ruta .rn-hero-stats span{padding:12px 16px;border:1px solid rgba(255,255,255,.2);border-radius:13px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.78);font-size:11px}
+.ruta .rn-hero-stats b{display:block;color:#fff;font:500 27px Georgia,serif}
+.ruta .rn-intro{max-width:850px;margin:58px auto 40px;text-align:center}
+.ruta .rn-intro h2,.ruta .rn-section>h2,.ruta .rn-how h2{margin:12px 0 16px;color:var(--nv);font:500 clamp(29px,4vw,42px)/1.15 Georgia,serif;letter-spacing:-.025em}
+.ruta .rn-intro p,.ruta .rn-section>p{color:var(--mut);font-size:14px;line-height:1.85}
+.ruta .rn-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ruta .rn-pillars article{padding:25px;border:1px solid var(--bd);border-radius:19px;background:#fff;box-shadow:0 8px 24px rgba(20,52,50,.045)}
+.ruta .rn-pillars article>span{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--cl);color:var(--az);font-size:24px}
+.ruta .rn-pillars h3,.ruta .rn-annex-grid h3{margin:17px 0 8px;color:var(--nv);font:500 23px Georgia,serif}
+.ruta .rn-pillars p,.ruta .rn-values p,.ruta .rn-note p{margin:0;color:var(--mut);font-size:13px;line-height:1.75}
+.ruta .rn-section{margin:60px 0}
+.ruta .rn-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:23px}
+.ruta .rn-values>div{padding:20px;border-left:3px solid var(--sol);border-radius:0 13px 13px 0;background:#f7f8f3}
+.ruta .rn-values b{display:block;margin-bottom:7px;color:var(--nv);font-size:14px}
+.ruta .rn-how{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,.8fr);gap:35px;align-items:center;padding:30px;border-radius:22px;background:#f4f6ef}
+.ruta .rn-how ol{padding-left:21px;color:var(--mut);font-size:13px;line-height:1.9}
+.ruta .rn-how li{padding:4px 0}.ruta .rn-how li b{color:var(--nv)}
+.ruta .rn-note{padding:25px;border-radius:18px;background:#123b46;color:#fff}
+.ruta .rn-note>span{color:#e9b95d;font-size:30px}.ruta .rn-note h3{margin:10px 0;color:#fff;font:500 25px Georgia,serif}.ruta .rn-note p{color:rgba(255,255,255,.75)}
+.ruta .rn-annex-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;margin:24px 0}
+.ruta .rn-annex-grid>div{padding:22px;border:1px solid var(--bd);border-radius:17px;background:#fff}
+.ruta .rn-annex-grid h3{margin-top:0}
+.ruta .rn-annex-grid ul{display:grid;gap:10px;padding:0;margin:0;list-style:none;color:var(--mut);font-size:13px}
+.ruta .rn-annex-grid li{display:flex;align-items:center;gap:9px}.ruta .rn-annex-grid li span{font-size:19px}
+.ruta .rn-annex-grid .rn-departments{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ruta .rn-disclaimer{padding:20px 22px;border:1px solid #e7dfc8;border-radius:16px;background:#fbf8ef;color:#59635a}
+.ruta .rn-disclaimer b{color:var(--nv)}.ruta .rn-disclaimer p{margin:8px 0 0;font-size:12px;line-height:1.75}
+.ruta .rn-cta{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:27px 30px;border-radius:20px;background:#eaf0e7}
+.ruta .rn-cta h2{margin:8px 0;color:var(--nv);font:500 clamp(24px,3vw,34px) Georgia,serif}.ruta .rn-cta p{margin:0;color:var(--mut);font-size:13px}
+@media(max-width:760px){.ruta .rn-pillars,.ruta .rn-values{grid-template-columns:1fr 1fr}.ruta .rn-how,.ruta .rn-annex-grid{grid-template-columns:1fr}.ruta .rn-cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.ruta .rn-hero{padding:30px 22px;border-radius:20px}.ruta .rn-hero>p{font-size:14px}.ruta .rn-hero-stats{gap:7px}.ruta .rn-hero-stats span{flex:1;min-width:95px;padding:10px}.ruta .rn-hero-stats b{font-size:23px}.ruta .rn-intro{margin:38px auto 30px}.ruta .rn-pillars,.ruta .rn-values{grid-template-columns:1fr}.ruta .rn-section{margin:42px 0}.ruta .rn-how{padding:21px}.ruta .rn-annex-grid .rn-departments{grid-template-columns:1fr 1fr}.ruta .rn-cta{padding:22px}}
+
+/* Lodging photography and media-picker thumbnails */
+.ruta .hotel-img{height:210px;overflow:hidden;border-radius:16px 16px 0 0;background:#edf1e8}
+.ruta .hotel-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.ruta .card:hover .hotel-img img{transform:scale(1.035)}
+@media(max-width:640px){.ruta .hotel-img{height:185px}}
+
+/* Fotografías con crédito visible: se respetan las licencias y se aclara cuando la foto es referencial. */
+.ruta figure.ruta-photo{display:block;margin:0;min-width:0;background:#eef2e9;overflow:hidden}
+.ruta .ruta-photo-frame{height:190px;overflow:hidden;background:#e8eee5}
+.ruta .ruta-photo-frame img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.ruta .card:hover .ruta-photo-frame img{transform:scale(1.035)}
+.ruta .ruta-photo-credit{display:flex;flex-wrap:wrap;gap:3px 7px;align-items:center;padding:7px 11px;background:#f3f5ef;color:#59665c;font-size:9px;line-height:1.4}
+.ruta .ruta-photo-credit span{color:#59665c}
+.ruta .ruta-photo-credit a{color:#1b6657;text-decoration:underline;font-weight:750}
+.ruta .ruta-photo-reference .ruta-photo-credit,.ruta .ruta-photo-context .ruta-photo-credit{background:#fff7e7;color:#765923}
+.ruta .ruta-photo-hero{margin:18px 0 28px;border-radius:22px;box-shadow:0 14px 35px rgba(16,53,57,.12)}
+.ruta .ruta-photo-hero .ruta-photo-frame{height:auto;max-height:520px;aspect-ratio:16/8;}
+.ruta .ruta-photo-hero .ruta-photo-credit{padding:9px 14px}
+.ruta .ruta-photo-card .ruta-photo-frame,.ruta .ruta-photo-hotel .ruta-photo-frame{height:190px}
+.ruta .card>.ruta-photo{border-radius:17px 17px 0 0}
+.ruta .card>.ruta-photo .ruta-photo-credit{min-height:30px}
+.ruta figure.rn-annex-figure{margin:0;padding:12px;border:1px solid var(--bd);border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(20,52,50,.04)}
+.ruta .rn-annex-figure>a{display:block}
+.ruta .rn-annex-figure img{display:block;width:100%;max-height:440px;object-fit:contain;border-radius:10px;background:#f7f8f5}
+.ruta .rn-annex-figure figcaption{padding:9px 4px 0;color:var(--mut);font-size:11px;line-height:1.5}
+.ruta .rn-document-section{max-width:930px;margin-left:auto;margin-right:auto}
+.ruta .rn-document-section>p{margin:13px 0;color:var(--mut);font-size:14px;line-height:1.9;text-align:left}
+.ruta .rn-objective-main{margin:20px 0;padding:24px 26px;border-left:4px solid var(--sol);border-radius:0 16px 16px 0;background:#f4f6ef}
+.ruta .rn-objective-main h3,.ruta .rn-objectives>h3{margin:0 0 9px;color:var(--nv);font-size:17px}
+.ruta .rn-objective-main p{margin:0;color:var(--mut);font-size:14px;line-height:1.8}
+.ruta .rn-objectives>h3{margin-top:25px}
+.ruta .rn-numbered{display:grid;gap:12px;padding-left:25px;color:var(--mut);font-size:14px;line-height:1.8}
+.ruta .rn-numbered li{padding:5px 0 5px 6px}
+.ruta .rn-pillars-document .rn-pillars{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ruta .rn-pillars-document .rn-pillars article{height:100%}
+.ruta .rn-values-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ruta .rn-principles{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ruta .rn-policy-list{display:grid;gap:12px;padding:0;list-style:none;counter-reset:policy}
+.ruta .rn-policy-list>li{position:relative;padding:20px 22px 20px 68px;border:1px solid var(--bd);border-radius:16px;background:#fff;counter-increment:policy}
+.ruta .rn-policy-list>li:before{content:counter(policy,decimal-leading-zero);position:absolute;left:20px;top:18px;display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#eaf0e7;color:#1b6657;font-size:12px;font-weight:850}
+.ruta .rn-policy-list h3{margin:0 0 7px;color:var(--nv);font-size:15px}
+.ruta .rn-policy-list p{margin:0;color:var(--mut);font-size:13px;line-height:1.8}
+.ruta .rn-appendices{display:grid;gap:18px}
+.ruta .rn-annex{display:grid;grid-template-columns:minmax(200px,.8fr) minmax(0,1.2fr);gap:22px;align-items:center;padding:22px;border:1px solid var(--bd);border-radius:20px;background:#fff;box-shadow:0 8px 24px rgba(20,52,50,.04)}
+.ruta .rn-annex>div:first-child h3{margin:8px 0;color:var(--nv);font:500 24px Georgia,serif}
+.ruta .rn-annex>div:first-child p{margin:0;color:var(--mut);font-size:13px;line-height:1.8}
+.ruta .rn-annex-label{color:#ad7c2b;font-size:10px;font-weight:850;letter-spacing:.16em}
+.ruta .rn-annex-gallery{display:grid;gap:12px}
+.ruta .rn-annex-gallery-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ruta .rn-annex-sources{grid-template-columns:1fr}
+.ruta .rn-annex-sources a{color:#1b6657;font-weight:750;text-decoration:underline}
+.ruta .rn-doc-byline{position:relative;z-index:1;margin-top:20px;color:rgba(255,255,255,.76);font-size:11px;line-height:1.7}
+@media(max-width:760px){
+ .ruta .rn-annex{grid-template-columns:1fr}
+ .ruta .rn-values-three,.ruta .rn-principles{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ruta .rn-pillars-document .rn-pillars{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ .ruta .ruta-photo-card .ruta-photo-frame,.ruta .ruta-photo-hotel .ruta-photo-frame{height:205px}
+ .ruta .ruta-photo-hero .ruta-photo-frame{aspect-ratio:4/3}
+ .ruta .rn-values-three,.ruta .rn-principles{grid-template-columns:1fr}
+ .ruta .rn-annex{padding:14px}
+ .ruta .rn-annex-gallery-two{grid-template-columns:1fr}
+ .ruta .rn-policy-list>li{padding:64px 17px 17px}
+ .ruta .rn-policy-list>li:before{left:17px;top:16px}
+}
+
+/* El alojamiento solo usa foto propia asignada; sin ella se presenta un marcador honesto. */
+.ruta .card>.ruta-hosp-photo-missing{min-height:190px;border-radius:17px 17px 0 0}
+.ruta .card>.ruta-photo-hotel-specific{border-radius:17px 17px 0 0}
+.ruta .card>.ruta-photo-hotel-specific .ruta-photo-frame{height:190px}
+
+/* 1.3.7 · fotografías con atribución en las tarjetas de categoría */
+.rc-tax-photo{border-radius:18px 18px 0 0;overflow:hidden}
+.rc-tax-photo .ruta-photo-frame{height:200px}
+.rc-tax-photo .ruta-photo-credit{font-size:.72rem;line-height:1.35}

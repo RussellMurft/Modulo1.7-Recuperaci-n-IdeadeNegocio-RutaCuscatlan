@@ -1,0 +1,58 @@
+.ruta{--az:#0F47AF;--nv:#0B2545;--ve:#2E8B57;--sol:#F5A623;--tq:#14B8A6;--cl:#EAF2FC;--bd:#d3dff0;--tx:#16233a;--mut:#5a6677;margin:0 0 24px;box-sizing:border-box;color:var(--tx)}
+.ruta *{box-sizing:border-box}.ruta img{max-width:100%;height:auto}.ruta a{color:var(--az)}
+.ruta .sr{position:absolute;left:-9999px}.ruta .hp{position:absolute;left:-9999px}
+.ruta .hero{background:linear-gradient(135deg,var(--nv),var(--az));color:#fff;border-radius:18px;padding:28px 24px;text-align:center;margin-bottom:20px}
+.ruta .hero .logo{max-width:420px;width:100%;background:#fff;border-radius:14px;padding:10px 16px;margin-bottom:14px}
+.ruta .hero h2{color:#fff;margin:.2em 0}.ruta .hero p{margin:.3em auto 1em;max-width:620px}
+.ruta .buscar{display:flex;gap:10px;max-width:640px;margin:auto;flex-wrap:wrap}.ruta .buscar input{flex:1;min-width:200px}
+.ruta .btn{display:inline-block;background:var(--az);color:#fff!important;border:0;border-radius:10px;padding:10px 18px;min-height:44px;font:700 1rem Arial,sans-serif;text-decoration:none;cursor:pointer}
+.ruta .btn.nar{background:var(--sol);color:#1b1b1b!important}.ruta .btn:hover{filter:brightness(1.08)}
+.ruta input:not([type=checkbox]),.ruta select,.ruta textarea{width:100%;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;font:1rem Arial,sans-serif;background:#fff;color:var(--tx);min-height:44px}
+.ruta input[type=checkbox]{width:20px;height:20px;min-width:0}
+.ruta .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:20px}.ruta .stats div{background:var(--cl);border-radius:12px;padding:14px;text-align:center}.ruta .stats b{display:block;font-size:1.9rem;color:var(--az)}
+.ruta .cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:22px}
+.ruta .cat{display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--cl);border:2px solid transparent;border-radius:14px;padding:16px 10px;text-decoration:none;color:var(--nv)}.ruta .cat:hover,.ruta .cat:focus-visible{border-color:var(--sol)}.ruta .cat span{font-size:2.2rem}.ruta .cat small{color:var(--mut)}
+.ruta .filtros{display:flex;gap:14px;flex-wrap:wrap;align-items:end;margin-bottom:12px}.ruta .filtros label{display:block;font-weight:700;flex:1;min-width:190px}.ruta .filtros .chk{display:flex;gap:8px;align-items:center;font-weight:400;flex:0 0 auto;min-height:44px}
+.ruta .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.ruta .chip{border:2px solid var(--bd);background:#fff;color:var(--nv);border-radius:99px;padding:8px 14px;min-height:40px;font:700 .9rem Arial,sans-serif;cursor:pointer}.ruta .chip[aria-pressed=true]{background:var(--az);border-color:var(--az);color:#fff}
+.ruta .count{color:var(--mut);margin:6px 0 12px}
+.ruta .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin:12px 0 22px}
+.ruta .card{background:#fff;border:1px solid var(--bd);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(11,37,69,.08);color:var(--tx)}.ruta .card[hidden]{display:none}
+.ruta .rb{height:130px;display:grid;place-items:center;font-size:3.2rem;overflow:hidden}.ruta .rb img{width:100%;height:100%;object-fit:cover}
+.ruta .cat-montanas{background:linear-gradient(135deg,#2E8B57,#0B2545)}.ruta .cat-playas{background:linear-gradient(135deg,#14B8A6,#0F47AF)}.ruta .cat-lagos{background:linear-gradient(135deg,#2B6FD6,#0B2545)}.ruta .cat-pueblos{background:linear-gradient(135deg,#F5A623,#B8431C)}.ruta .cat-arqueologia{background:linear-gradient(135deg,#8A6D3B,#3B2C14)}.ruta .cat-naturaleza{background:linear-gradient(135deg,#4CB36B,#1B5E3A)}.ruta .cat-parques{background:linear-gradient(135deg,#14B8A6,#F5A623)}.ruta .cat-plazas{background:linear-gradient(135deg,#7A4FB5,#0B2545)}
+.ruta .cb{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}.ruta .cb h3,.ruta .cb h4{margin:0;color:var(--nv)}.ruta .cb h3 a{text-decoration:none;color:var(--nv)}.ruta .cb p{margin:0}.ruta .cb .btn{margin-top:auto;align-self:flex-start}
+.ruta .meta{color:var(--mut);font-size:.9rem}
+.ruta .tag{display:inline-block;padding:2px 11px;border-radius:99px;color:#fff;font-size:.8rem;font-weight:700;background:var(--az)}.ruta .tag.ok{background:var(--ve)}.ruta .tag.cerca{background:#6b7a90}.ruta .tag.no{background:#a14b4b}
+.ruta .msg{padding:12px 16px;border-radius:10px;background:var(--cl);margin:10px 0}.ruta .msg.good{background:#dff3e8;color:#14603a}.ruta .msg.bad{background:#fbe5e5;color:#8d1c1c}
+.ruta .ficha{border-collapse:collapse;width:100%;max-width:560px;margin:10px 0}.ruta .ficha th,.ruta .ficha td{padding:9px;border-bottom:1px solid var(--bd);text-align:left}.ruta .ficha th{background:var(--cl);width:38%;color:var(--nv)}
+.ruta .form{background:#fff;border:1px solid var(--bd);border-radius:16px;padding:20px;max-width:680px}.ruta .form label{display:block;font-weight:700;margin-bottom:14px}.ruta .dos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ruta :focus-visible{outline:3px solid var(--sol);outline-offset:2px}
+@media(max-width:640px){.ruta .dos{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.ruta *{transition:none!important}}
+.ruta .migas{font-size:.9rem;color:var(--mut);margin:0 0 10px}.ruta .migas a{color:var(--az)}
+.ruta .btn.wa{background:#0B6E57}.ruta .btn.lim{background:#fff;color:var(--az)!important;border:2px solid var(--az);align-self:end}
+.ruta .ficha+h3,.ruta h3{margin-top:1.2em}
+.ruta .card:hover{box-shadow:0 6px 18px rgba(11,37,69,.16)}.ruta .card{transition:box-shadow .2s}
+.ruta .pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:12px 0 22px}.ruta .paso{background:var(--cl);border-radius:14px;padding:16px}.ruta .paso span{font-size:2rem;display:block}.ruta .paso p{margin:.3em 0 0;color:var(--mut)}
+/* Imagenes de destinos y hospedajes con atribucion visible */
+.ruta figure.ruta-photo{display:block;margin:0;overflow:hidden;background:#eef2e9}
+.ruta .ruta-photo-frame{height:190px;overflow:hidden;background:#e8eee5}
+.ruta .ruta-photo-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.ruta .ruta-photo-credit{display:flex;flex-wrap:wrap;gap:3px 7px;padding:7px 10px;background:#f3f5ef;color:#59665c;font-size:9px;line-height:1.4}
+.ruta .ruta-photo-credit a{color:#1b6657;text-decoration:underline;font-weight:700}
+.ruta .ruta-photo-hero{margin:18px 0 28px;border-radius:18px}
+.ruta .ruta-photo-hero .ruta-photo-frame{height:auto;aspect-ratio:16/8;max-height:520px}
+.ruta .ruta-photo-context .ruta-photo-credit,.ruta .ruta-photo-reference .ruta-photo-credit{background:#fff7e7}
+
+/* Hospedajes: no repetir la foto del destino ni simular que es la del negocio. */
+.ruta .ruta-hosp-photo-missing{min-height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:22px 18px;text-align:center;background:linear-gradient(135deg,#eaf0e7 0%,#f7f4e9 52%,#e2ece5 100%);color:var(--nv);border-bottom:1px solid var(--bd)}
+.ruta .ruta-hosp-photo-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:18px;background:#fff;color:#26735c;font:700 34px Georgia,serif;box-shadow:0 7px 20px rgba(17,67,57,.10)}
+.ruta .ruta-hosp-photo-missing strong{font-size:13px;line-height:1.35}
+.ruta .ruta-hosp-photo-missing small{max-width:230px;color:var(--mut);font-size:11px;line-height:1.55}
+
+/* Marcador neutral: no reutiliza una foto ajena cuando no hay imagen específica verificada. */
+.ruta .ruta-place-photo-missing{min-height:190px;height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:18px;text-align:center;background:linear-gradient(135deg,#e7eee7 0%,#f7f3e8 55%,#e2ebe5 100%);color:var(--nv);border-bottom:1px solid var(--bd)}
+.ruta .ruta-place-photo-missing span{font-size:2.5rem;line-height:1}
+.ruta .ruta-place-photo-missing strong{font-size:12px;line-height:1.4;color:var(--mut)}
+
+.ruta .ruta-place-photo-missing small{max-width:245px;color:var(--mut);font-size:11px;line-height:1.5}
+.ruta .ruta-horario tr.hoy th,.ruta .ruta-horario tr.hoy td{font-weight:700;background:#fff7e0}.ruta .ruta-horario h3 .tag{font-size:.8rem;vertical-align:middle;margin-left:6px}

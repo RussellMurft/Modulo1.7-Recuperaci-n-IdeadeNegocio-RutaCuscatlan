@@ -1,0 +1,16 @@
+<?php get_header(); ?>
+<div class="rc-container rc-single-layout">
+    <?php while (have_posts()) : the_post(); ?>
+        <nav class="rc-breadcrumbs" aria-label="<?php esc_attr_e('Migas de pan', 'ruta-cuscatlan-theme'); ?>"><a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Inicio', 'ruta-cuscatlan-theme'); ?></a><span>›</span><a href="<?php echo esc_url(rc_theme_get_destination_url()); ?>"><?php esc_html_e('Explorar', 'ruta-cuscatlan-theme'); ?></a><span>›</span><strong><?php the_title(); ?></strong></nav>
+        <article <?php post_class('rc-place-article'); ?>>
+            <header class="rc-place-heading"><div><span class="rc-eyebrow"><i></i><?php echo esc_html(rc_theme_current_place_category() ?: __('DESTINO SALVADOREÑO', 'ruta-cuscatlan-theme')); ?></span><h1><?php the_title(); ?></h1><p><?php echo esc_html(get_the_excerpt()); ?></p><?php if (function_exists('ruta_badge_abierto')) { $rc_badge = ruta_badge_abierto(get_the_ID()); if ($rc_badge) { echo '<p class="rc-open-status">' . $rc_badge . ' <a href="#horario">' . esc_html__('Ver horario', 'ruta-cuscatlan-theme') . '</a></p>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+ } } ?></div></header>
+            <?php $rc_legacy_image = trim((string) get_post_meta(get_the_ID(), '_rc_legacy_image', true)); ?>
+            <?php if (has_post_thumbnail()) : ?><figure class="rc-place-cover"><?php the_post_thumbnail('rc-place-hero', array('loading' => 'eager')); ?></figure><?php elseif ($rc_legacy_image && wp_http_validate_url($rc_legacy_image)) : ?><figure class="rc-place-cover"><img src="<?php echo esc_url($rc_legacy_image); ?>" alt="<?php echo esc_attr(get_the_title()); ?>" loading="eager"></figure><?php elseif (function_exists('ruta_foto_lugar_markup') && ruta_foto_lugar_info(get_the_ID())) : ?><div class="ruta rc-place-photo-fallback"><?php echo ruta_foto_lugar_markup(get_the_ID(), 'hero'); ?></div><?php elseif (function_exists('ruta_foto_lugar_sin_foto_markup')) : ?><div class="ruta rc-place-photo-fallback"><?php echo ruta_foto_lugar_sin_foto_markup(get_the_ID()); ?></div><?php endif; ?>
+            <div class="rc-place-body"><div class="rc-place-content"><?php the_content(); ?></div>
+                <aside class="rc-place-aside"><div class="rc-aside-card"><span class="rc-aside-icon" aria-hidden="true">✦</span><h2><?php esc_html_e('Sigue explorando', 'ruta-cuscatlan-theme'); ?></h2><p><?php esc_html_e('Descubre otros destinos y encuentra el próximo lugar para tu aventura.', 'ruta-cuscatlan-theme'); ?></p><a class="rc-button" href="<?php echo esc_url(rc_theme_get_destination_url()); ?>"><?php esc_html_e('Ver más destinos', 'ruta-cuscatlan-theme'); ?> <span aria-hidden="true">→</span></a></div><div class="rc-aside-card rc-aside-light"><h2><?php esc_html_e('¿Conoces un lugar especial?', 'ruta-cuscatlan-theme'); ?></h2><p><?php esc_html_e('Ayúdanos a ampliar esta guía compartiendo tu recomendación.', 'ruta-cuscatlan-theme'); ?></p><a href="<?php echo esc_url(rc_theme_get_suggest_url()); ?>"><?php esc_html_e('Enviar sugerencia', 'ruta-cuscatlan-theme'); ?> ↗</a></div></aside>
+            </div>
+        </article>
+    <?php endwhile; ?>
+</div>
+<?php get_footer(); ?>

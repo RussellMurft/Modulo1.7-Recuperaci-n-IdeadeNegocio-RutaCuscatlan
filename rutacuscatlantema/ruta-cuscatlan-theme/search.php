@@ -1,0 +1,5 @@
+<?php get_header(); ?>
+<div class="rc-container rc-page-layout"><header class="rc-page-heading"><span class="rc-eyebrow"><i></i><?php esc_html_e('RESULTADOS', 'ruta-cuscatlan-theme'); ?></span><h1><?php printf(esc_html__('Resultados para: %s', 'ruta-cuscatlan-theme'), '<em>' . esc_html(get_search_query()) . '</em>'); ?></h1></header><div class="rc-blog-grid">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?><article class="rc-blog-card"><div class="rc-blog-card-body"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><p><?php echo esc_html(get_the_excerpt()); ?></p><?php if (function_exists('ruta_badge_abierto')) { echo ruta_badge_abierto(get_the_ID()); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><?php } ?><a class="rc-text-link" href="<?php the_permalink(); ?>"><?php esc_html_e('Ver resultado', 'ruta-cuscatlan-theme'); ?> →</a></div></article><?php endwhile; else : ?><p><?php esc_html_e('No encontramos resultados. Intenta con otras palabras.', 'ruta-cuscatlan-theme'); ?></p><?php endif; ?>
+</div><?php the_posts_pagination(); ?></div>
+<?php get_footer(); ?>
